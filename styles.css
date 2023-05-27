@@ -1,0 +1,11 @@
+h1 {
+    color: red;
+}
+
+h2.main-subheading {
+    font-size: 25px;
+}
+
+#navigation {
+    background-color: aliceblue;
+}
