@@ -1,42 +1,106 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    margin: 0px;
+    background-color: #ececec;
 }
 
-h1 {
-    color: red;
+.content {
+    margin: 1% 1% 1% 1%;
 }
 
-h2.main-subheading {
-    font-size: 27px;
+.title {
+    text-align: center;
 }
 
-#navigation {
-    background-color: aliceblue;
+.header {
+    height: 20vh;
+    color: #fff;
+    padding: 0 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-bottom: 1px solid #000;
+    padding: 1em;
 }
 
-#about-me {
-    background-color: azure;
+.socials {
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 
-#box:checked + label {
-    outline: 3px solid green;
+.social-image {
+    width: 50px;
+    height: auto;
 }
 
-a {
-    text-decoration: none;
+.intro-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 0.75em;
 }
 
-.div-element {
-    height: 100px;
-    width: 100px;
-    color: white;
-    background-color: red;
- }
+.image-container {
+    width: 15em;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
 
- .span-element {
-    height: 100px;
-    width: 100px;
-    color: white;
-    background-color: blue;
-    display: inline-block;
- }
+.profile-pic {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.intro-row-container {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 0.5em;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 0px 5px 0px 5px;
+}
+
+.column h3 {
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
