@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
     margin: 0px;
-    background-color: #ececec;
+    background-color: #fff;
 }
 
 .content {
@@ -19,7 +19,7 @@ body {
     padding: 0 2vw;
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     background: rgb(63,94,251);
     background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -47,15 +47,19 @@ body {
 }
 
 .image-container {
-    width: 15em;
+    width: 10%;
     border: 1px solid #000;
     border-radius: 5px;
-}
+    order: 1;
+} 
 
 .profile-pic {
     display: block;
     width: 100%;
     height: auto;
+    order: 1;
+    padding: 0;
+    margin: 0;
 }
 
 .intro-row-container {
