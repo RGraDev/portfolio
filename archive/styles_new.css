@@ -1,0 +1,155 @@
+* {
+    margin: 0vw;
+    padding: 0vw;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0vw;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+p {
+    font-size: 2em;
+}
+
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    grid-template-areas:
+      "header"
+      "intro"
+      "experience"
+      "education"
+      "portfolio"
+      "footer";
+}
+
+#header {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    /* border-bottom: 1px solid #000; */
+    border: 1px solid red;
+    gap: 20vh;
+    padding: 2vh 2vw;
+}
+
+#title {
+    font-size: 4.5em;
+    order: -1;
+}
+
+#header-blurb {
+    display: flex;
+    flex-direction: column;
+    order: -2;
+    align-items: flex-start;
+    gap: 15vh;
+}
+
+#header-blurb h2 {
+    font-size: 4em;
+}
+
+#header-blurb h3 {
+    font-size: 3.5em;
+}
+
+.swipe {
+    order: 4;
+}
+
+#socials {
+    display: flex;
+    gap: 3vw;
+    list-style: none;
+    margin: 2vw 0vw;
+    order: -3;
+}
+
+.social-image {
+    width: 15vw;
+    height: auto;
+}
+
+.content-section {
+    height: 100vh;
+    border: 2px solid red;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 3px;
+    padding: 1v 0.5;
+    gap: 2vh;
+    padding: 4vw;
+    justify-content: safe;
+    height: 100vh;
+}
+
+.column h2 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.column h3 {
+    text-align: left;
+    font-size: 4em;
+}
+
+ul.tech {
+    font-size: 2em;
+    list-style-type: "\1F449";
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    height: fit-content;
+    margin-bottom: 0px;
+}
+
+li span {
+    position: relative;
+    left: 20px;
+  }
+
+.test-image {
+    max-height: 10vh;
+    width: auto;
+    height: auto;
+}
+
+.technologies {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-radius: 3px;
+    padding: 5px 5px 5px 5px;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid red;
+}
